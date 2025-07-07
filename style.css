@@ -1,19 +1,88 @@
-.card {
-    width: 80px;
-    height: 80px;
-    margin: 10px;
-    font-size: 2rem;
-    cursor: pointer;
-    user-select: none;
+body {
+    background: linear-gradient(135deg, #4a90e2, #9013fe);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    min-height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-    background: #0d6efd;
-    color: white;
-    border-radius: 10px;
+    align-items: center;
+    padding: 20px;
 }
 
-.card.flipped, .card.matched {
-    background: #198754;
-    cursor: default;
+.container {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 16px;
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+button.btn-primary {
+    background: #00c6ff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button.btn-primary:hover {
+    background: #0072ff;
+    transform: translateY(-2px);
+}
+
+h1, h2, h3, h4 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.list-group-item {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: #fff;
+}
+
+#infoText {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#clickButton {
+    background: #28a745;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+#clickButton:hover {
+    background: #218838;
+    transform: translateY(-2px);
+}
+
+#restartButton {
+    background: #ff416c;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+    margin-top: 15px;
+}
+
+#restartButton:hover {
+    background: #ff4b2b;
+    transform: translateY(-2px);
+}
+
+ol {
+    text-align: left;
+    padding-left: 20px;
+}
+
+p {
+    color: #ddd;
 }
